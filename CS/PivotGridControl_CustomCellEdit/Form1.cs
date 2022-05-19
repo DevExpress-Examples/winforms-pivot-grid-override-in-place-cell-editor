@@ -17,11 +17,6 @@ namespace PivotGridControl_CustomCellEdit {
         private void Form1_Load(object sender, EventArgs e) {
             this.salesPersonTableAdapter.Fill(this.nwindDataSet.SalesPerson);
 
-            // Specifies the type of data field and format settings.
-            fieldQuantityPercent.SummaryDisplayType = PivotSummaryDisplayType.PercentOfColumn;
-            fieldQuantityPercent.CellFormat.FormatType = DevExpress.Utils.FormatType.Custom;
-            fieldQuantityPercent.CellFormat.FormatString = "{0}%";
-
             // Initializes cell editors for this Pivot Grid control.
             pivotGridControl1.RepositoryItems.AddRange(new RepositoryItem[] { riTextEdit, riProgressBar });
         }

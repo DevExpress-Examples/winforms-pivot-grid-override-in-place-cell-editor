@@ -9,7 +9,7 @@ This example shows how to change the editor type when the editor is in "edit" mo
 
 ![Pivot Grid](image/pivotgrid.png)
 
-The `ProgressBar` in-place editor (repository item) displays values of the "Quantity %" field as progress bars. In "edit" mode, the [CustomCellEditForEditing](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.CustomCellEditForEditing) event rises to change this repository item to `TextEdit`.
+The `ProgressBar` in-place editor (repository item) displays values of the "Quantity %" field as progress bars. In "edit" mode, the [CustomCellEditForEditing](https://docs.devexpress.com/WindowsForms/DevExpress.XtraPivotGrid.PivotGridControl.CustomCellEditForEditing) event is raised to change this repository item to `TextEdit`.
 
 ## Files to Review
 * [Form1.cs](./CS/PivotGridControl_CustomCellEdit/Form1.cs) (VB: [Form1.vb](./VB/PivotGridControl_CustomCellEdit/Form1.vb))

@@ -26,7 +26,7 @@ namespace PivotGridControl_CustomCellEdit {
             // Overrides the cell editor for the edit mode.
             if (e.DataField == fieldQuantityPercent & e.RowValueType == PivotGridValueType.Value) 
                     e.RepositoryItem = riTextEdit;            
-        }     
+        }  
         private void pivotGridControl1_CustomCellValue(object sender, PivotCellValueEventArgs e) {
             if (e.DataField == fieldQuantityPercent)
                 e.Value = Math.Round(Convert.ToDecimal(e.Value) * 100, 2);
